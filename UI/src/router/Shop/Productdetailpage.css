@@ -1,0 +1,70 @@
+/* ProductImages.css */
+
+.product-detail-flex-container {
+    display: flex;
+    margin-top: 30px; /* Adjust this value as needed */
+  }
+  
+  .image-section {
+    display: flex;
+    position: sticky; /* Add this line */
+    top: 0; /* Add this line */
+    margin-right: 20px; /* Add this line */
+  }
+  
+  .image-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #f0f0f0; /* Add a border to the image list */
+    max-height: 500px; /* Set a max height */
+    overflow-y: auto; /* Make it scrollable */
+  }
+  @media (max-width: 768px) {
+    .image-list {
+      flex-direction: row;
+      overflow-x: auto; /* Make it scrollable horizontally */
+      max-height: initial;
+    }
+  }
+  
+
+  
+  .image-list img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .large-image {
+    border: 1px solid #f0f0f0; /* Updated border color */
+    background-color: #f5f5f5; /* Add a background color */
+  }
+  
+  .large-image img {
+    width: 500px;
+    height: 500px;
+    max-width: 300px;
+    object-fit: cover;
+  }
+
+  .youtube-preview {
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+
+
+  .large-image video {
+   max-width: 300px;
+    object-fit: cover;
+  }
+
+  .large-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f0f0f0; /* Updated border color */
+    background-color: #f5f5f5; /* Add a background color */
+  }
+
+  
